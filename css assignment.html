@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled CSS Tables & Lists</title>
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            background-color: #a52a2a; /* brown */
+            text-align: center;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 8px;
+            width: 50%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+        }
+
+        /* Lists Styling */
+        .lists-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        ul, ol {
+            background: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        li {
+            padding: 5px 0;
+            color: #333;
+        }
+
+        /* Modern CSS Table Styling */
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 18px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        th {
+            background-color: #a52a2a;
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Link Styling */
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="table">Lists, Anchor Tags, & CSS Tables</h1> 
+
+    <!-- Lists Section -->
+    <div class="lists-container">
+        <div>
+            <h3>Names List</h3>
+            <ol>
+                <li>Names</li>
+                <li>Mboya</li>
+                <li>Euniquie</li>
+            </ol>
+        </div>
+        <div>
+            <h3>Age List</h3>
+            <ul>
+                <li>Age</li>
+                <li>23</li>
+                <li>45</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- New CSS Table Section -->
+    <h2>Data Displayed in CSS Tables</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mboya</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Euniquie</td>
+                    <td>45</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Anchor Tag Section -->
+    <div class="link-container">
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </div>
+
+</body>
+</html>
